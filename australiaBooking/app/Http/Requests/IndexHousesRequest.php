@@ -24,13 +24,13 @@ class IndexHousesRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'alpha_dash',
-            'priceStart' => 'numeric',
-            'priceFinish' => 'numeric',
-            'bedrooms' => 'integer',
-            'bathrooms' => 'integer',
-            'storeys' => 'integer',
-            'garages' => 'integer',
+            'name' => 'alpha_dash|nullable',
+            'priceStart' => 'numeric|nullable',
+            'priceFinish' => 'numeric|nullable',
+            'bedrooms' => 'integer|nullable',
+            'bathrooms' => 'integer|nullable',
+            'storeys' => 'integer|nullable',
+            'garages' => 'integer|nullable',
             //
         ];
     }
